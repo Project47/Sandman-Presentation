@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>SandmanJS Presentation</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+
+
+    <link href="static/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+   <div style="z-index:100"><button onclick="heel()" >Hmdf</button></div>
+<div id="slide1" class="slides">
+  <div class="title">Sandman.JS - A Custom Gesture
+      Recognition <br />Javascript Library</div>
+      </div>
+
+    <div id = "slide2" class = "slides">
+      <div class="heading">Group Members</div>
+      <ul class="points">
+        <li> Anuj Vidyut Gandhi </li>
+        <li> Ajay Nair Radhakrishnan</li>
+        <li> Shreyas Kumar Panigrahi</li>
+        <li> Veerkar Partha Prabodh </li>
+
+      </ul>
+    </div>
+
+    <div id = "slide3" class = "slides">
+      <div class="heading"> Where are we? </div>
+      <br /><img src = "/static/img3.png" class = "imgslide"> </img>
+    </div>
+
+    <div id = "slide4" class = "slides">
+      <div class="heading"> Features  </div>
+      <ul class="points">
+        <li> Custome gestures </li>
+        <li> No database required </li>
+        <li> No redundant data </li>
+        <li> Motion independent </li>
+      </ul>
+    </div>
+
+    <div id = "slide5" class = "slides">
+      <div class="heading"> Algorithm </div>
+        <ul class="points">
+          <li> Smoothing Algorithm </li>
+          <li> Linear Interpolation </li>
+          <li> Scaling using Fourier Transform </li>
+          <li> Determination of parameters </li>
+          <li> Gesture Comparision </li>
+        </ul>
+      </div>
+
+      <div id = "slide6" class = "slides">
+        <div class="heading"> Smoothing </div>
+        <ul class="points">
+          <li> Smoothens irregular edges </li>
+          <li> Done by averaging </li>
+        </ul>
+      </div>
+
+      <div id = "slide7" class = "slides">
+        <div class="heading"> Smoothing </div>
+        <br /><img src = "/static/img7.png" class = "imgslide"> </img>
+      </div>
+
+      <div id = "slide8" class = "slides">
+        <div class="heading"> Linear Interpolation </div>
+        <ul class="points">
+          <li> Number of input points array </li>
+          <li> Gesture represnted by 32 equidistant points </li>
+        </ul>
+      </div>
+
+      <div id = "slide9" class = "slides">
+        <div class="heading"> Linear Interpolation </div>
+        <br /><img src = "/static/img9.png" class = "imgslide"> </img>
+      </div>
+
+      <div id = "slide10" class = "slides">
+        <div class="heading"> Fourier Transform </div>
+        <ul class="points">
+          <li> Descriptors are translation invariant </li>
+          <li> Descriptors are scale invariant </li>
+        </ul>
+<br /><img src = "/static/fourier.png" id = "fourier"></img>
+      </div>
+
+      <div id = "slide11" class = "slides">
+        <div class="heading"></div>
+        <br /><img src = "/static/img11.png" class = "imgslide"> </img>
+      </div>
+
+      <div id = "slide12" class = "slides">
+        <div class="heading"> Gesture Comparision </div>
+        <ul class="points">
+          <li> Determining Parameters </li>
+          <li> Finding state based on parameters </li>
+          <li> Comparision </li>
+          <li> Backtracking </li>
+         </ul>
+
+      </div>
+
+      <div id="slide13" class="slides">
+        <div class="heading">Parameters</div>
+        <ul class="points">
+          <li>No. of strokes</li>
+          <li>No. of crossover points</li>
+          <li>Existence of horizontal and vertical lines</li>
+          <li>No. of crossover points</li>
+          <li>Partition</li>
+        </ul>
+      </div>
+
+      <div id="slide14" class="slides">
+        <div class="heading">Number of Strokes</div>
+        <br /><img src = "static/img14.png" class="imgslide" />
+        <ul class="points">
+        </ul>
+      </div>
+
+      <div id="slide15" class="slides">
+        <div class="heading">Crossover points</div>
+        <br /><img src = "static/img15.png" class="imgslide" />
+        <ul class="points">
+        </ul>
+      </div>
+
+      <div id="slide16" class="slides">
+        <div class="heading">Horizintal and Vertical line</div><br />
+        <br /><img src = "static/img16a.png" class="imgslide" />
+        <ul class="points">
+        </ul>
+      </div>
+
+      <div id="slide17" class="slides">
+        <div class="heading">Partition</div>
+        <br /><img src = "static/img17.png" class="imgslide" />
+        <ul class="points">
+        </ul>
+      </div>
+
+      <div id="slide18" class="slides">
+        <div class="heading"></div>
+        <ul id="exul" class="points">
+          <li>No. of strokes: 1</li>
+          <li>Partition: 4</li>
+          <li>Crossover points: 0</li>
+          <li>Existence of horizontal line: 0</li>
+          <li>Existence of vertical line: 0</li>
+          <li>No. of X axis deviations: 2</li>
+          <li>No. of Y axis deviations: 2</li>
+          <br />
+          <li>Parameter Array: 1400022</li>
+        </ul>
+<img id= "oneing" src = "static/img18.png" class="imgslide" />
+      </div>
+
+      <div id="slide19" class="slides">
+        <div class="heading">States</div>
+        <ul class="points">
+          <li>Uniques state for unique set of parameter values</li>
+          <li>Each state may contain multiple gestures</li>
+        </ul>
+      </div>
+
+      <div id="slide20" class="slides">
+        <div class="heading"></div>
+        <br /><img src = "static/img20.png" class="imgslide" />
+        <ul class="points">
+        </ul>
+      </div>
+
+      <div id="slide21" class="slides">
+        <div class="heading">Gesture Comparison</div>
+        <ul class="points">
+          <li>Comparison of X and Y coordinates of the gestures</li>
+          <li>Threshold to allow some human error</li>
+        </ul>
+      </div>
+
+      <div id="slide22" class="slides">
+        <div class="heading">Backtracking</div>
+        <ul class="points">
+          <li>Backtrack when match is not found</li>
+        </ul>
+      </div>
+
+      <div id="slide23" class="slides">
+        <div class="heading"></div>
+        <br /><img src = "static/img20.png" class="imgslide" />
+        <ul class="points">
+        </ul>
+      </div>
+
+      <div id="slide24" class="slides">
+        <div class="heading">Library Generator</div>
+        <ul class="points">
+          <li>Interface for creating custon gestures</li>
+          <li>Select gestures of your choice</li>
+        </ul>
+      </div>
+
+      <div id="slide25" class="slides">
+        <div class="heading"></div>
+        <ul class="points">
+          <li>Latency of file: ~850ms (on ~60 Kbps)</li>
+          <li>Minimum size of downloaded library:<br /> 4.1 KB
+            (compressed)<br />15 KB (uncompressed)</li>
+          <br />
+          <li>Each gesture adds 350 Bytes</li>
+        </ul>
+      </div>
+
+      <div id="slide26" class="slides">
+        <div class="title">Demo</div>
+        <ul class="points">
+        </ul>
+      </div>
+
+      <div id="slide27" class="slides">
+        <div class="title">Thank You</div>
+        <ul class="points">
+        </ul>
+      </div>
+
+
+
+
+
+      <div id="footer">
+        <div id="foot1" class="footers">1</div>
+        <div id="foot2" class="footers">2</div>
+        <div id="foot3" class="footers">3</div>
+        <div id="foot4" class="footers">4</div>
+        <div id="foot5" class="footers">5</div>
+        <div id="foot6" class="footers">6</div>
+        <div id="foot7" class="footers">7</div>
+        <div id="foot8" class="footers">8</div>
+        <div id="foot9" class="footers">9</div>
+        <div id="foot10" class="footers">10</div>
+        <div id="foot11" class="footers">11</div>
+        <div id="foot12" class="footers">12</div>
+        <div id="foot13" class="footers">13</div>
+        <div id="foot14" class="footers">14</div>
+        <div id="foot15" class="footers">15</div>
+        <div id="foot16" class="footers">16</div>
+        <div id="foot17" class="footers">17</div>
+        <div id="foot18" class="footers">18</div>
+        <div id="foot19" class="footers">19</div>
+        <div id="foot20" class="footers">20</div>
+        <div id="foot21" class="footers">21</div>
+        <div id="foot22" class="footers">22</div>
+        <div id="foot23" class="footers">23</div>
+        <div id="foot24" class="footers">24</div>
+        <div id="foot25" class="footers">25</div>
+        <div id="foot26" class="footers">26</div>
+        <div id="foot27" class="footers">27</div>
+      </div>
+
+
+  </body>
+
+<script type="text/javascript" src="static/sandman.js"></script>
+
+   <script type="text/javascript" src="static/index.js"></script>
+</html>
